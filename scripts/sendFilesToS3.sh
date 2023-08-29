@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+#Script for sending all parsed data of Magic the Gathering to AWS 3 bucket.
+#
+#
 
 cd /mnt/c/Users/jonat/Project/Data/MTG_data/parsedJsonDataForSolr
 
