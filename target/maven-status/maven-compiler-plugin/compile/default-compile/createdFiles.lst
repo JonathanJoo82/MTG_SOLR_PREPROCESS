@@ -1,0 +1,4 @@
+com\mtgSolr\dao\Token.class
+com\mtgSolr\dao\Card.class
+com\mtgSolr\Main.class
+com\mtgSolr\Utils\JsonParserUtils.class
