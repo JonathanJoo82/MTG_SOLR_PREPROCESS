@@ -37,7 +37,7 @@ tar -czf fullMTGdata.json_10001_20000_${timestamp}.tar.gz CardData{10001..20000}
 rm CardData{10001..20000}.json
 tar -czf fullMTGdata.json_20001_30000_${timestamp}.tar.gz CardData{20001..30000}.json
 rm CardData{20001..30000}.json
-tar -czf fullMTGdata.json_30001_40000_${timestamp}.tar.gz CardData{30001..4000}.json
+tar -czf fullMTGdata.json_30001_40000_${timestamp}.tar.gz CardData{30001..40000}.json
 rm CardData{30001..40000}.json
 tar -czf fullMTGdata.json_40001_50000_${timestamp}.tar.gz CardData{40001..50000}.json
 rm  CardData{40001..50000}.json
