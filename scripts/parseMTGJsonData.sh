@@ -35,36 +35,12 @@ mv AllPrintings* $BACKUP_RAW_DATA
 
 cd $PARSED_DATA_CURRENT
 
-
-
 for range in $numberRange
 do
   tar -czf fullMTGdata.json_"$count"_"${timestamp}".tar.gz CardData"$range".json
   rm CardData"$range".json
   count=$((count + 1))
 done
-
-
-tar -czf fullMTGdata.json_1_10000_${timestamp}.tar.gz CardData{1..10000}.json
-rm CardData{1..10000}.json
-tar -czf fullMTGdata.json_10001_20000_${timestamp}.tar.gz CardData{10001..20000}.json
-rm CardData{10001..20000}.json
-tar -czf fullMTGdata.json_20001_30000_${timestamp}.tar.gz CardData{20001..30000}.json
-rm CardData{20001..30000}.json
-tar -czf fullMTGdata.json_30001_40000_${timestamp}.tar.gz CardData{30001..40000}.json
-rm CardData{30001..40000}.json
-tar -czf fullMTGdata.json_40001_50000_${timestamp}.tar.gz CardData{40001..50000}.json
-rm  CardData{40001..50000}.json
-tar -czf fullMTGdata.json_50001_60000_${timestamp}.tar.gz CardData{50001..60000}.json
-rm CardData{50001..60000}.json
-tar -czf fullMTGdata.json_60001_70000_${timestamp}.tar.gz CardData{60001..70000}.json
-rm CardData{60001..70000}.json
-tar -czf fullMTGdata.json_70001_80000_${timestamp}.tar.gz CardData{70001..80000}.json
-rm CardData{70001..80000}.json
-tar -czf fullMTGdata.json_80001_90000_${timestamp}.tar.gz CardData{80001..90000}.json
-rm CardData{80001..90000}.json
-tar -czf fullMTGdata.json_90001_100000_${timestamp}.tar.gz CardData{90001..100000}.json
-rm CardData{90001..100000}.json
 
 mv *tar.gz $DATA_DONE_DIR
 
